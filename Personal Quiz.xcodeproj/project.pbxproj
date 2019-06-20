@@ -54,14 +54,46 @@
 		A878C8C422BB55D400310910 /* Personal Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				A878C8C522BB55D400310910 /* AppDelegate.swift */,
-				A878C8C722BB55D400310910 /* ViewController.swift */,
-				A878C8C922BB55D400310910 /* Main.storyboard */,
-				A878C8CC22BB55D500310910 /* Assets.xcassets */,
-				A878C8CE22BB55D500310910 /* LaunchScreen.storyboard */,
-				A878C8D122BB55D500310910 /* Info.plist */,
+				A878C8D922BB7E4D00310910 /* Model */,
+				A878C8D822BB7E4400310910 /* View */,
+				A878C8D722BB7E1800310910 /* Controller */,
+				A878C8DA22BB7E9A00310910 /* Supporting Files */,
 			);
 			path = "Personal Quiz";
+			sourceTree = "<group>";
+		};
+		A878C8D722BB7E1800310910 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A878C8C722BB55D400310910 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A878C8D822BB7E4400310910 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A878C8C922BB55D400310910 /* Main.storyboard */,
+				A878C8CE22BB55D500310910 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A878C8D922BB7E4D00310910 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A878C8DA22BB7E9A00310910 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A878C8C522BB55D400310910 /* AppDelegate.swift */,
+				A878C8D122BB55D500310910 /* Info.plist */,
+				A878C8CC22BB55D500310910 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
-				INFOPLIST_FILE = "Personal Quiz/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Personal Quiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
-				INFOPLIST_FILE = "Personal Quiz/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Personal Quiz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
