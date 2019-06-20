@@ -54,6 +54,7 @@ extension QuestionViewController {
         
         // get current question
         let currentQuestion = questions[questionIndex]
+        questionLable.text = currentQuestion.text
         
         // get current answer
         let currentAnswers = currentQuestion.answers
@@ -84,6 +85,10 @@ extension QuestionViewController {
     private func updateSingleStackView(using answers: [Answer]) {
         // show single satck view
         singleStackView.isHidden = false
+        
+        for (button, answer) in zip(singleButtons, answers) {
+            button.setTitle(answer.text, for: [])
+        }
     }
     
     /// Setup multiple stack view
@@ -92,6 +97,10 @@ extension QuestionViewController {
     private func updateMultipleStackView(using answers: [Answer]) {
         // show multiple satck view
         multipleStackView.isHidden = false
+        
+        for (label, answer) in zip(multipleLabels, answers) {
+            label.text = answer.text
+        }
     }
     
     /// Setup ranged stack view
@@ -100,6 +109,9 @@ extension QuestionViewController {
     private func updateRangedStackView(using answers: [Answer]) {
         // show ranged satck view
         rangedStackView.isHidden = false
+        
+        rangedLabels.first?.text = answers.first?.text
+        rangedLabels.last?.text = answers.last?.text
     }
 }
 

@@ -92,23 +92,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-Nh-cbf">
-                                <rect key="frame" x="20" y="224" width="280" height="120"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-Nh-cbf">
+                                <rect key="frame" x="20" y="232" width="280" height="168"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cA5-15-dXM">
                                         <rect key="frame" x="117" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQu-7m-kST">
-                                        <rect key="frame" x="117" y="30" width="46" height="30"/>
+                                        <rect key="frame" x="117" y="46" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35k-Ef-9KE">
-                                        <rect key="frame" x="117" y="60" width="46" height="30"/>
+                                        <rect key="frame" x="117" y="92" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncN-r4-v9q">
-                                        <rect key="frame" x="117" y="90" width="46" height="30"/>
+                                        <rect key="frame" x="117" y="138" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
@@ -230,7 +230,7 @@
                             <constraint firstItem="FcJ-gU-fAd" firstAttribute="trailing" secondItem="gpU-sK-UgU" secondAttribute="trailing" constant="20" id="ZV8-vX-DSc"/>
                             <constraint firstItem="heT-0A-ilv" firstAttribute="leading" secondItem="FcJ-gU-fAd" secondAttribute="leading" constant="20" id="eTG-HL-yoh"/>
                             <constraint firstItem="gfZ-LU-cm8" firstAttribute="leading" secondItem="1hp-dS-fzb" secondAttribute="leading" id="hbw-GU-j8x"/>
-                            <constraint firstItem="Vfg-Nh-cbf" firstAttribute="centerY" secondItem="1hp-dS-fzb" secondAttribute="centerY" id="jtu-TL-hwK"/>
+                            <constraint firstItem="Vfg-Nh-cbf" firstAttribute="centerY" secondItem="1hp-dS-fzb" secondAttribute="centerY" constant="32" id="jtu-TL-hwK"/>
                             <constraint firstItem="FcJ-gU-fAd" firstAttribute="trailing" secondItem="vpc-Le-V4v" secondAttribute="trailing" constant="20" id="phn-cY-cq2"/>
                             <constraint firstItem="FcJ-gU-fAd" firstAttribute="trailing" secondItem="Vfg-Nh-cbf" secondAttribute="trailing" constant="20" id="tO6-CW-brZ"/>
                             <constraint firstItem="gfZ-LU-cm8" firstAttribute="top" secondItem="FcJ-gU-fAd" secondAttribute="top" id="uES-kE-KY8"/>
