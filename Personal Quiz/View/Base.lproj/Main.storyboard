@@ -335,6 +335,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="u3z-kS-o91" id="pvv-DL-CK1"/>
+                        <outlet property="resultDefinitionLabel" destination="tYD-UK-NKY" id="4uI-fR-8Fq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59S-e1-idN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="j5n-KY-4Cg" userLabel="Exit" sceneMemberID="exit"/>
