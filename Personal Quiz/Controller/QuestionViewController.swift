@@ -18,18 +18,54 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet var multipleStackView: UIStackView!
     @IBOutlet var multipleLabels: [UILabel]!
-    @IBOutlet var multipleButton: UIButton!
+    @IBOutlet var multipleSwitches: [UISwitch]!
     
     @IBOutlet var rangedStackView: UIStackView!
     @IBOutlet var rangedLabels: [UILabel]!
-    @IBOutlet var rangedButton: UIButton!
+    @IBOutlet var rangedSlider: UISlider!
     
     @IBOutlet var questionProgressView: UIProgressView!
     
     // MARK: Pivate Properties
     private var questions = Question.getQuestions()
     private var questionIndex = 0 // Index of current question
+    
+    /// Answer choosen by user
+    private var answersChoosen: [Answer] = []
+    
+}
 
+// MARK: IBActions
+extension QuestionViewController {
+    
+    @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+        let currentAnswers = questions[questionIndex].answers
+        guard let currentIndex = singleButtons.firstIndex(of: sender) else { return }
+        let currentAnser = currentAnswers[currentIndex]
+        answersChoosen.append(currentAnser)
+        
+        nextQuestion()
+    }
+    
+    @IBAction func multipleAnswerButtonPressed() {
+        let currentAnswers = questions[questionIndex].answers
+        
+        for (multipleSwitch, answer) in zip(multipleSwitches, currentAnswers) {
+            if multipleSwitch.isOn {
+                answersChoosen.append(answer)
+            }
+        }
+        
+        nextQuestion()
+    }
+    
+    @IBAction func rangedAnswersButtonPressed() {
+        let currentAnswers = questions[questionIndex].answers
+        let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
+        answersChoosen.append(currentAnswers[index])
+        
+        nextQuestion()
+    }
 }
 
 // MARK: UIViewController Methods
@@ -115,3 +151,16 @@ extension QuestionViewController {
     }
 }
 
+// MARK: - State
+extension QuestionViewController {
+    // show next question or go to the next screen
+    private func nextQuestion() {
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+        } else {
+            performSegue(withIdentifier: "resultSegue", sender: nil)
+        }
+    }
+}
