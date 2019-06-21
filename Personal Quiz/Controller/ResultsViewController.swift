@@ -23,8 +23,7 @@ extension ResultsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
-        navigationItem.leftBarButtonItem = backButton
+        navigationItem.hidesBackButton = true
         updateResult()
     }
 }
