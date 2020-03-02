@@ -67,30 +67,31 @@
 			isa = PBXGroup;
 			children = (
 				A878C8D922BB7E4D00310910 /* Model */,
-				A878C8D822BB7E4400310910 /* View */,
-				A878C8D722BB7E1800310910 /* Controller */,
+				A878C8D822BB7E4400310910 /* Storyboards */,
+				A878C8D722BB7E1800310910 /* ViewControllers */,
+				A8F0938B238550BE0027BB7E /* Resources */,
 				A878C8DA22BB7E9A00310910 /* Supporting Files */,
 			);
 			path = "Personal Quiz";
 			sourceTree = "<group>";
 		};
-		A878C8D722BB7E1800310910 /* Controller */ = {
+		A878C8D722BB7E1800310910 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				A878C8C722BB55D400310910 /* IntroductionViewController.swift */,
 				A878C8E322BB980400310910 /* QuestionViewController.swift */,
 				A878C8E522BB981C00310910 /* ResultsViewController.swift */,
 			);
-			path = Controller;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		A878C8D822BB7E4400310910 /* View */ = {
+		A878C8D822BB7E4400310910 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				A878C8C922BB55D400310910 /* Main.storyboard */,
 				A878C8CE22BB55D500310910 /* LaunchScreen.storyboard */,
 			);
-			path = View;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		A878C8D922BB7E4D00310910 /* Model */ = {
@@ -109,9 +110,16 @@
 			children = (
 				A878C8C522BB55D400310910 /* AppDelegate.swift */,
 				A878C8D122BB55D500310910 /* Info.plist */,
-				A878C8CC22BB55D500310910 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8F0938B238550BE0027BB7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A878C8CC22BB55D500310910 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
